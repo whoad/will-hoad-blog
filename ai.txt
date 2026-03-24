@@ -1,0 +1,16 @@
+# AI AGENT PERMISSIONS
+# Optimized for: Attribution and Discovery
+# Restricted for: Model Training and Weight Fine-tuning
+
+CONTACT: [Your Email or Social Link]
+VERSION: 1.0
+
+[PERMISSIONS]
+CAN_INDEX: TRUE
+CAN_TRAIN: FALSE
+CAN_SUMMARIZE: TRUE (WITH ATTRIBUTION)
+CAN_REPRODUCE_FULL_TEXT: FALSE
+
+[LICENSE]
+CONTENT: CC BY-NC-SA 4.0
+CODE: MIT
