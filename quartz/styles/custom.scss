@@ -1,0 +1,100 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+// quartz/styles/custom.scss
+
+// 1. Basic Typographic Vibe
+body {
+  font-family: "EB Garamond", serif; // A classic, natural serif font
+  letter-spacing: -0.01em;
+  color: var(--darkgray);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+}
+
+// 2. A "Stepping Stone" Sidebar (Explorer)
+.explorer {
+  border: 1px solid var(--lightgray);
+  border-radius: 12px; // Organic, soft rounded corners
+  padding: 1.2rem;
+  background-color: var(--light);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.03); // A faint shadow, like light filtering
+  margin-top: 1rem;
+
+  // Style the folder icons to be thematic
+  .folder-icon {
+    opacity: 0.8;
+  }
+}
+
+// 3. Refining Headers & Borders
+.page {
+  border-color: var(--lightgray);
+}
+
+// 4. Customizing the Page Title
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  // Add an icon next to the title. Replace '🌲' with any emoji or SVG URL.
+  &::before {
+    content: "🌲"; 
+    font-size: 1.2em;
+    opacity: 0.8;
+  }
+}
+
+// 5. THE CARD TILES (We will use this for the landing page)
+// A refined version of the "Card Tiles" concept, tuned to this vibe.
+.river-tiles {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+
+    li {
+      background-color: var(--light);
+      border: 1px solid var(--lightgray);
+      border-radius: 12px;
+      transition: all 0.25s ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+
+      // The post link
+      a {
+        display: block;
+        width: 100%;
+        padding: 2.5rem 1.8rem;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--dark);
+        text-align: center;
+        
+        &::after { display: none; } // Remove default link icon
+      }
+
+      // Hover Effect: "Gliding into the River"
+      &:hover {
+        border-color: var(--secondary); // Accent green/blue border
+        transform: translateY(-5px); // Lift, like a stone in the water
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); // Dynamic shadow
+        background-color: var(--highlight);
+        
+        a {
+          color: var(--secondary);
+        }
+      }
+    }
+  }
+}

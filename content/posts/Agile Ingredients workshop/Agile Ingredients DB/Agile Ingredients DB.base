@@ -1,0 +1,19 @@
+filters:
+  and:
+    - note["base"] == link("Agile Ingredients DB.base")
+properties:
+  file.name:
+    displayName: Name
+  Created:
+    displayName: Created
+  Tags:
+    displayName: Tags
+views:
+  - type: table
+    name: Table View
+    order:
+      - file.name
+      - Created
+      - Tags
+    columnSize:
+      note.Created: 122
