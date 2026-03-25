@@ -2,7 +2,46 @@
 
 // put your custom CSS here!
 
-// quartz/styles/custom.scss
+// Masonry for Quartz 4 Article Gallery
+article.gallery {
+  // Target the paragraph that contains all the images
+  & > p {
+    display: block !important;
+    column-count: 3 !important;
+    column-gap: 12px !important;
+    margin: 1.5rem 0 !important;
+    line-height: 0; // Removes ghost spacing under images
+
+    // The individual images
+    img {
+      width: 100% !important;
+      height: auto !important;
+      display: block !important;
+      margin-bottom: 12px !important; // Spacing between "bricks"
+      break-inside: avoid !important;
+      border-radius: 6px;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.015);
+        z-index: 10;
+      }
+    }
+  }
+}
+
+// Mobile: Drop to 1 or 2 columns
+@media (max-width: 800px) {
+  article.gallery > p {
+    column-count: 2 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  article.gallery > p {
+    column-count: 1 !important;
+  }
+}
 
 // 1. Basic Typographic Vibe
 body {
@@ -17,7 +56,7 @@ h1, h2, h3 {
   color: var(--dark);
 }
 
-// 2. A "Stepping Stone" Sidebar (Explorer)
+// 2. Sidebar (Explorer)
 .explorer {
   border: 1px solid var(--lightgray);
   border-radius: 12px; // Organic, soft rounded corners

@@ -1,5 +1,10 @@
 ---
-
+description:
+draft: true
+ai_summary: ""
+license: CC BY-NC-SA 4.0
+created: 2026-03-22T17:36
+updated: 2026-03-24T23:08
 ---
 *21/03/24*
 
@@ -17,4 +22,4 @@ Rather than telling people where to go, we need to hold hope for them so they ca
 
 #HoldingHope #AgileCoaching #CleanLanguage
 
-![[Untitled 103 1.png]]
+![[../assets/images/HoldingHopeCreepyAI.png]]
