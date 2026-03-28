@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Will Hoad\nIterate Everything",
+    pageTitle: "Iterate Everything",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -29,26 +29,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#fdfcf5", // Off-white, like aged paper or birch bark
-          lightgray: "#e9e2d0", // Light beige for subtle borders
-          gray: "#8a7d6e", // Muted brown for subtitles
-          darkgray: "#2f3e3a", // Deep charcoal-green for body text
-          dark: "#1a2b27", // Deep forest-green for headings
-          secondary: "#216e39", // Deep forest-green for links (like foliage)
-          tertiary: "#8fa2a3", // Muted cool teal (the river hint)
-          highlight: "rgba(33, 110, 57, 0.05)",
-          textHighlight: "rgba(81, 162, 218, 0.1)"
+          light: "#faf9f6",       // Soft parchment (Background)
+          lightgray: "#e5e2de",   // Warm stone (Borders/UI)
+          gray: "#99948f",        // Muted taupe (Graph lines/Meta)
+          darkgray: "#403e3c",    // Deep charcoal-brown (Body text)
+          dark: "#1c1b1a",        // Ink black (Headers)
+          secondary: "#4c7a4c",   // Forest Green (Links/Icons)
+          tertiary: "#7b4b94",    // Royal Purple (Hover states)
+          highlight: "rgba(76, 122, 76, 0.1)", // Green tint (Internal links)
+          textHighlight: "#d9f2b1",             // Spring Leaf (==highlight==)
         },
         darkMode: {
-          light: "#14181a", // Very deep night sky or cool black
-          lightgray: "#2c353a", // Subtle cool-gray for borders
-          gray: "#8fa2a3", // Muted cool teal/gray for subtitles
-          darkgray: "#d9dadb", // Off-white for body text
-          dark: "#ffffff", // Pure white for headings
-          secondary: "#51a2da", // Vibrant, clear river blue for links
-          tertiary: "#2f3e3a", // Deep charcoal-green accents
-          highlight: "rgba(81, 162, 218, 0.1)",
-          textHighlight: "rgba(81, 162, 218, 0.1)"
+          light: "#1a1a1b",       // Deep obsidian (Background)
+          lightgray: "#2e2e30",   // Dark slate (Borders/UI)
+          gray: "#646466",        // Medium grey (Graph lines/Meta)
+          darkgray: "#d4d4d4",    // Soft silver (Body text)
+          dark: "#ebebeb",        // Off-white (Headers)
+          secondary: "#b39ddb",   // Glowing Lavender (Links/Icons)
+          tertiary: "#8eb07d",    // Leaf Green (Hover states)
+          highlight: "rgba(179, 157, 219, 0.15)", // Purple glow (Internal links)
+          textHighlight: "#4a314d",               // Deep Plum (==highlight==)
         },
       },
     },

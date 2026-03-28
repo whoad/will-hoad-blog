@@ -2,44 +2,215 @@
 
 // put your custom CSS here!
 
+/* 1. Targets the entire header row of the explorer */
+.explorer-header, 
+button#explorer, 
+.explorer > button,
+.explorer h1,
+.explorer .folder-icon.chevron {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* 2. Force the content below it to always stay visible/open */
+#explorer-content, 
+#explorer-ul {
+    display: block !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+.search {
+  background: rgba(var(--light), 0.5) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--lightgray), 0.5);
+  border-radius: 8px;
+}
+
+// Targets the current page link in the explorer
+.explorer li > a[aria-current="page"] {
+  background-color: rgba(var(--secondary), 0.15);
+  padding: 2px 10px;
+  border-radius: 8px;
+  color: var(--tertiary) !important;
+  font-weight: 600;
+}
+
+.explorer li a {
+  transition: all 0.2s ease;
+  display: inline-block;
+
+  &:hover {
+    transform: translateX(5px);
+    color: var(--tertiary) !important;
+    text-shadow: 0 0 8px rgba(var(--tertiary), 0.4);
+  }
+}
+
+
+// .sidebar.left {
+//   position: relative;
+//   // This creates a solid vertical bar that doesn't mess with the layout width
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 4px; /* Keep it thin for a professional look, or 4px for a bold accent */
+//     height: 100%;
+//     background-color: var(--lightgray); 
+//     opacity: 0.3;
+//   }
+// }
+
+
+//--------------------------------
+
+// 1. Target the left sidebar specifically
+.sidebar.left {
+  position: relative;
+  z-index: -1;
+  
+  // Create the image layer
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; // Sit behind the explorer/links
+    pointer-events: none;
+    
+    background-size: cover;
+    background-position: center;
+    
+    // Smooth transition for theme switching
+    transition: background-image 0.3s ease;
+
+    // --- LIGHT MODE ---
+    background-image: url("/assets/images/design/design_Mountain_Banner.JPG");
+    // Subtle fade to the right so it doesn't clash with the center column
+    mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    opacity: 0.2; // Keep it subtle for light mode
+  }
+}
+
+// 2. --- DARK MODE OVERRIDE ---
+[saved-theme="dark"] .sidebar.left::before {
+  background-image: url("/assets/images/design/design_Trees_banner.jpeg");
+  opacity: 0.4; // Can be a bit stronger in dark mode
+  mask-image: linear-gradient(to right, black 70%, transparent 100%); 
+  -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+}
+
+// 3. Ensure the sidebar content is readable
+.sidebar.left {
+  // Add some padding so text isn't touching the edge of the image
+  padding: 1rem;
+  
+  // Make sure the explorer and links stay on top
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+//--------------------
+
 // Masonry for Quartz 4 Article Gallery
 article.gallery {
-  // Target the paragraph that contains all the images
-  & > p {
+  // 1. Target ONLY paragraphs that contain images
+  p:has(img) {
     display: block !important;
     column-count: 3 !important;
     column-gap: 12px !important;
-    margin: 1.5rem 0 !important;
-    line-height: 0; // Removes ghost spacing under images
+    margin: 2rem 0 !important;
+    line-height: 0; 
 
-    // The individual images
+    // Ensure the images behave as "bricks"
     img {
       width: 100% !important;
       height: auto !important;
       display: block !important;
-      margin-bottom: 12px !important; // Spacing between "bricks"
+      margin-bottom: 12px !important; 
       break-inside: avoid !important;
-      border-radius: 6px;
-      transition: transform 0.2s ease-in-out;
-
-      &:hover {
-        transform: scale(1.015);
-        z-index: 10;
-      }
+      border-radius: 8px;
     }
+  }
+
+  // 2. Ensure paragraphs with ONLY text stay normal
+  p:not(:has(img)) {
+    column-count: 1 !important;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    display: block !important;
   }
 }
 
-// Mobile: Drop to 1 or 2 columns
+// Responsive adjustments
 @media (max-width: 800px) {
-  article.gallery > p {
+  article.gallery p:has(img) {
     column-count: 2 !important;
   }
 }
 
 @media (max-width: 500px) {
-  article.gallery > p {
+  article.gallery p:has(img) {
     column-count: 1 !important;
+  }
+}
+//--------------------------------
+
+.page-banner {
+  position: relative; // Needed for absolute positioning of the title
+  width: 100%;
+  height: 400px;
+  margin: -1rem 0 2rem 0;
+  overflow: hidden;
+  border-radius: 12px;
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%; // Gradient covers the bottom half
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .banner-title {
+    color: white !important;
+    font-size: 3rem !important;
+    margin: 0 !important;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    height: 250px;
+    .banner-title { font-size: 1.8rem !important; }
   }
 }
 
@@ -59,10 +230,10 @@ h1, h2, h3 {
 // 2. Sidebar (Explorer)
 .explorer {
   border: 1px solid var(--lightgray);
-  border-radius: 12px; // Organic, soft rounded corners
-  padding: 1.2rem;
+  border-radius: 12px; 
+  padding: 1.3rem;
   background-color: var(--light);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.03); // A faint shadow, like light filtering
+  box-shadow: 0 4px 6px rgba(0,0,0,0.03); 
   margin-top: 1rem;
 
   // Style the folder icons to be thematic
@@ -81,13 +252,6 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  
-  // Add an icon next to the title. Replace '🌲' with any emoji or SVG URL.
-  &::before {
-    content: "🌲"; 
-    font-size: 1.2em;
-    opacity: 0.8;
-  }
 }
 
 // 5. THE CARD TILES (We will use this for the landing page)
@@ -95,10 +259,11 @@ h1, h2, h3 {
 .river-tiles {
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
-    padding: 0;
-    list-style: none;
+    padding: 0 !important;
+    margin: 2rem 0 !important;
+    list-style: none !important;
 
     li {
       background-color: var(--light);
@@ -114,6 +279,7 @@ h1, h2, h3 {
         display: block;
         width: 100%;
         padding: 2.5rem 1.8rem;
+        margin: 0;
         text-decoration: none;
         font-weight: 600;
         font-size: 1.1rem;
@@ -123,7 +289,7 @@ h1, h2, h3 {
         &::after { display: none; } // Remove default link icon
       }
 
-      // Hover Effect: "Gliding into the River"
+      // Hover Effect
       &:hover {
         border-color: var(--secondary); // Accent green/blue border
         transform: translateY(-5px); // Lift, like a stone in the water
@@ -136,4 +302,64 @@ h1, h2, h3 {
       }
     }
   }
+}
+
+
+/* Index Page Grid Layout */
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* The Glassmorphism Cards */
+.index-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(var(--lightgray), 0.1);
+  border: 1px solid rgba(var(--lightgray), 0.5);
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    margin-top: 0;
+    color: var(--secondary);
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--gray);
+  }
+
+  a {
+    margin-top: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: var(--tertiary) !important;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(var(--lightgray), 0.2);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+}
+
+/* High-end Typography for the Index Title */
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+  background: linear-gradient(to right, var(--secondary), var(--tertiary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

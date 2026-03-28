@@ -52,3 +52,4 @@ export {
   ConditionalRender,
 }
 export { default as Lightbox } from "./Lightbox"
+export { default as Banner } from "./Banner"
