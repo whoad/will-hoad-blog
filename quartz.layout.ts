@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { SimpleSlug } from "./quartz/util/path"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -8,8 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "LinkedIn": "https://www.linkedin.com/in/will-hoad/",
     },
   }),
 }
@@ -28,13 +28,6 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ContentMeta(),
     Component.Lightbox(), 
-
-    Component.RecentNotes({
-      title: "Latest Observations",
-      limit: 3,
-      filter: (f) => f.slug?.startsWith("posts/") && f.slug !== "posts/index",
-      linkToMore: "posts/" as SimpleSlug,
-    }),
   ],
   left: [
     Component.PageTitle(),
@@ -68,7 +61,10 @@ export const defaultListPageLayout: PageLayout = {
       component: Component.ArticleTitle(),
       condition: (page) => !page.fileData.frontmatter?.banner,
     }),
-    Component.ContentMeta(),
+    Component.ContentMeta({
+      showCreated: true,
+      showModified: true,
+    }),
     Component.Lightbox(),
     
   ],

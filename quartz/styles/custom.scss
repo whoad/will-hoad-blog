@@ -2,22 +2,6 @@
 
 // put your custom CSS here!
 
-
-/* 1. Hide Recent Notes by default on all pages */
-.recent-notes {
-  display: none;
-}
-
-/* 2. Only show them when the body slug is "index" */
-body[data-slug="index"] .recent-notes {
-  display: block;
-  margin-top: 4rem; /* Pushes it down so it feels like a footer/after-body section */
-  border-top: 1px solid rgba(var(--lightgray), 0.3);
-  padding-top: 2rem;
-}
-
-//-------------------
-
 /* 1. Targets the entire header row of the explorer */
 .explorer-header, 
 button#explorer, 
@@ -43,11 +27,10 @@ button#explorer,
 
 
 .search {
-  background: rgba(var(--light), 0.5) !important;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(var(--lightgray), 0.5);
-  border-radius: 8px;
+  background-color: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
 }
 
 // Targets the current page link in the explorer
@@ -75,7 +58,6 @@ button#explorer,
 // 1. Target the left sidebar specifically
 .sidebar.left {
   position: relative;
-  z-index: -1;
   
   // Create the image layer
   &::before {
@@ -95,18 +77,21 @@ button#explorer,
     transition: background-image 0.3s ease;
 
     // --- LIGHT MODE ---
-    background-image: url("/assets/images/design/design_Mountain_Banner.JPG");
+    background-image: url("/assets/images/design/P1010020.jpg");
     // Subtle fade to the right so it doesn't clash with the center column
     mask-image: linear-gradient(to right, black 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
     opacity: 0.2; // Keep it subtle for light mode
   }
 }
-
+// /assets/images/design/design_Mountain_Banner.JPG
+// P1010020 - light tree
+// P1125391 - single forest tree
 // 2. --- DARK MODE OVERRIDE ---
+// /assets/images/design/design_Trees_banner.jpeg
 [saved-theme="dark"] .sidebar.left::before {
-  background-image: url("/assets/images/design/design_Trees_banner.jpeg");
-  opacity: 0.4; // Can be a bit stronger in dark mode
+  background-image: url("/assets/images/design/P1125636.jpg");
+  opacity: 0.2; // Increased to ensure visibility against dark backgrounds
   mask-image: linear-gradient(to right, black 70%, transparent 100%); 
   -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
 }

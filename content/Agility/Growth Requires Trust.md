@@ -3,10 +3,11 @@ description:
 ai_summary: We face many challenges in today’s world, from personal, to group, to business. So often to fix in place and stagnate is to fail. Building both a growth mindset and a trusting culture are essential if we want to continuously adapt, improve and succeed in the long term. It is not possible to effectively do one without the other. Approaches like Safe and Brave spaces can help us build up both these factors and support us toward high-performing teams where radical candour is possible.
 license: CC BY-NC-SA 4.0
 created: 2023-08-18T17:36
-updated: 2026-03-24T23:08
+updated: 2026-03-29T15:41
+tags:
+  - Article
 ---
 *V2 : 05/03/24   *~~*V1:18/8/23*~~
-
 # **Synopsis / TLDR**
 With the rate of change and competition in the world, to fix in place and stagnate is to fail. This applies to everything from business and careers to social progression.
 

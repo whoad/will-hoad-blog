@@ -3,7 +3,8 @@ description:
 draft: false
 ai_summary: ""
 license: CC BY-NC-SA 4.0
-created: 2018-02-15T00:00:00
+version: 1
+created: 2018-02-15T00:00
 updated: 2026-03-25T22:48
 tags:
   - workshop
@@ -13,7 +14,6 @@ banner: ../../assets/images/ingredients/ingredient_cards.jpg
 cssclasses:
   - gallery
 ---
-*V1 - 15 Feb 2018*
 
 ## [[https://docs.google.com/presentation/d/1oCSlTvueJmxFL-8CoiosBemXt-3iEQof1H5Dw2xXclg/edit?usp=sharing|Presentation - Google Drive]]
 
