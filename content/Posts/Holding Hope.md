@@ -4,7 +4,6 @@ draft: false
 ai_summary: ""
 license: CC BY-NC-SA 4.0
 created: 2024-03-21T17:36
-updated: 2026-03-29T14:33
 ---
 
 My partner is a counsellor, and today she shared with me the concept of “holding hope” for clients.

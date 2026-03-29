@@ -14,7 +14,7 @@ Iterate Everything
 	<div class="index-card">
 		<h3> Agility</h3>
 		<p>My core resource on everything agility. An interlinked web of concepts & elements aiming  to unpick the complexity of the systems we look to evolve </p>
-		<a href="/agility">Explore→</a>
+		<a href="/Agility">Explore→</a>
 	</div>
 	<div class="index-card">
 		<h3>Posts</h3>
