@@ -1,6 +1,5 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { SimpleSlug } from "./quartz/util/path"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -61,10 +60,7 @@ export const defaultListPageLayout: PageLayout = {
       component: Component.ArticleTitle(),
       condition: (page) => !page.fileData.frontmatter?.banner,
     }),
-    Component.ContentMeta({
-      showCreated: true,
-      showModified: true,
-    }),
+    Component.ContentMeta(),
     Component.Lightbox(),
     
   ],

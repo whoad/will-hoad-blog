@@ -25,7 +25,7 @@ There are many tools that can help us build trust and growth;
 
 To grow we need to go a step further and tackle the areas that we find uncomfortable like conflicts and failures.
 
-[**Brave Spaces](https://www.notion.so/Growth-requires-Trust-requires-Growth-3de2d6e7374c4e998662e1ef73a36030)  extend** Safe Space principles by moving from a focus on comfort to collective growth. Encouraging supportive challenge and vulnerability while maintaining safety enables groups to really grow together. For high performing groups you can even begin to use Radical Candor both to show that you “care personally” and to “challenge directly” when giving feedback.
+[**Brave Spaces**](https://www.notion.so/Growth-requires-Trust-requires-Growth-3de2d6e7374c4e998662e1ef73a36030)  extend Safe Space principles by moving from a focus on comfort to collective growth. Encouraging supportive challenge and vulnerability while maintaining safety enables groups to really grow together. For high performing groups you can even begin to use Radical Candor both to show that you “care personally” and to “challenge directly” when giving feedback.
 
 ![[../assets/images/Fostering Trust and Growth Chart.png]]
 
@@ -121,7 +121,7 @@ Finally, you get the practice of Radical Candor which, for me, is like a sledgeh
 ### **Mapped together**
 We can map the approaches together, balanced against trust and mindset, onto the below chart. This chart is an illustration, not a mathematical formula.
 
-![[../assets/images/Fostering Trust and Growth Chart with Radical Candor overlay.png]]
+![[../assets/images/Fostering Trust and Growth Chart.png]]
 
 The elements not yet directly mentioned are:
 **Deep conflict** - the reason why these spaces were created. It is a place of hurt and active distrust of intervention. This could be a group of marginalised people, or even a team that has fallen out and lost its ability to communicate.
