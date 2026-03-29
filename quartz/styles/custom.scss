@@ -2,6 +2,22 @@
 
 // put your custom CSS here!
 
+
+/* 1. Hide Recent Notes by default on all pages */
+.recent-notes {
+  display: none;
+}
+
+/* 2. Only show them when the body slug is "index" */
+body[data-slug="index"] .recent-notes {
+  display: block;
+  margin-top: 4rem; /* Pushes it down so it feels like a footer/after-body section */
+  border-top: 1px solid rgba(var(--lightgray), 0.3);
+  padding-top: 2rem;
+}
+
+//-------------------
+
 /* 1. Targets the entire header row of the explorer */
 .explorer-header, 
 button#explorer, 
@@ -53,23 +69,6 @@ button#explorer,
     text-shadow: 0 0 8px rgba(var(--tertiary), 0.4);
   }
 }
-
-
-// .sidebar.left {
-//   position: relative;
-//   // This creates a solid vertical bar that doesn't mess with the layout width
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     width: 4px; /* Keep it thin for a professional look, or 4px for a bold accent */
-//     height: 100%;
-//     background-color: var(--lightgray); 
-//     opacity: 0.3;
-//   }
-// }
-
 
 //--------------------------------
 

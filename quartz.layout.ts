@@ -28,6 +28,13 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ContentMeta(),
     Component.Lightbox(), 
+
+    Component.RecentNotes({
+      title: "Latest Observations",
+      limit: 3,
+      filter: (f) => f.slug?.startsWith("posts/") && f.slug !== "posts/index",
+      linkToMore: "posts/" as SimpleSlug,
+    }),
   ],
   left: [
     Component.PageTitle(),
