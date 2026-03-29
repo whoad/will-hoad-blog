@@ -22,13 +22,13 @@ Iterate Everything
 		<a href="/Posts">Read more →</a>
 	</div>
 	<div class="index-card">
-		<h3>Everything else</h3>
+		<h3>Everything Else</h3>
 		<p>While everything can be iterated most of the world is outside the office, so here are all the other interests</p>
 		<a href="/everything">Rabbit hole →</a>
 	</div>
 </div>
 
-[Medium](https://medium.com/@willhoad) | [LinkedIn](https://www.linkedin.com/in/will-hoad/) | [CACI](https://www.caci.co.uk/)
+[Medium](https://medium.com/@willhoad) | [LinkedIn](https://www.linkedin.com/in/will-hoad/) | [CACI](https://www.caci.co.uk/) | [Youtube](https://www.youtube.com/@WillHoad)
 
 ## Articles and Resources 
 - [[Posts/Holding Hope]]
