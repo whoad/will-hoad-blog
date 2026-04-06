@@ -1,36 +1,33 @@
 @use "./base.scss";
+@use "./components.scss";
 
 // put your custom CSS here!
 
 /* 1. Targets the entire header row of the explorer */
-.explorer-header, 
-button#explorer, 
-.explorer > button,
-.explorer h1,
-.explorer .folder-icon.chevron {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
+@media (min-width: 800px) {
+    .explorer-header, 
+    button#explorer, 
+    .explorer > button,
+    .explorer h1,
+    .explorer .folder-icon.chevron {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+    }
 }
 
 /* 2. Force the content below it to always stay visible/open */
-#explorer-content, 
-#explorer-ul {
-    display: block !important;
-    max-height: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-
-.search {
-  background-color: var(--light);
-  border: 1px solid var(--lightgray);
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+@media (min-width: 800px) {
+    #explorer-content, 
+    #explorer-ul {
+        display: block !important;
+        max-height: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
 }
 
 // Targets the current page link in the explorer
@@ -153,51 +150,6 @@ article.gallery {
   }
 }
 //--------------------------------
-
-.page-banner {
-  position: relative; // Needed for absolute positioning of the title
-  width: 100%;
-  height: 400px;
-  margin: -1rem 0 2rem 0;
-  overflow: hidden;
-  border-radius: 12px;
-
-  img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-  .banner-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60%; // Gradient covers the bottom half
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .banner-title {
-    color: white !important;
-    font-size: 3rem !important;
-    margin: 0 !important;
-    font-weight: 800;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .page-banner {
-    height: 250px;
-    .banner-title { font-size: 1.8rem !important; }
-  }
-}
-
 // 1. Basic Typographic Vibe
 body {
   font-family: "EB Garamond", serif; // A classic, natural serif font
@@ -226,6 +178,55 @@ h1, h2, h3 {
   }
 }
 
+/* Fix mobile explorer: prevents it from being trapped in a small box */
+@media (max-width: 799px) {
+  /* Ensure the sidebar stays on top of page content on mobile */
+  .sidebar.left {
+    z-index: 100 !important;
+  }
+
+  /* 1. Reset the explorer container on mobile so it doesn't look like a box in the header */
+  .explorer {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    overflow: visible !important; /* Allows the fixed child to escape the container */
+  }
+
+  /* 2. Force the list to become a full-screen overlay when the menu is opened */
+  .explorer:not(.collapsed) #explorer-content {
+    display: block !important;
+    position: fixed !important;
+    top: 5rem !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    height: calc(100vh - 5rem) !important;
+    background-color: var(--light) !important; /* Solid background is key to covering content */
+    z-index: 9999 !important;
+    padding: 2rem !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important;
+    border-top: 1px solid var(--lightgray) !important;
+    
+    /* Force visibility overrides to bypass Quartz's default animation/hidden states */
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-height: none !important;
+  }
+
+  /* 3. Specifically ensure the list inside is also visible */
+  .explorer:not(.collapsed) #explorer-ul {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
 // 3. Refining Headers & Borders
 .page {
   border-color: var(--lightgray);
@@ -240,110 +241,10 @@ h1, h2, h3 {
 
 // 5. THE CARD TILES (We will use this for the landing page)
 // A refined version of the "Card Tiles" concept, tuned to this vibe.
-.river-tiles {
-  ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    padding: 0 !important;
-    margin: 2rem 0 !important;
-    list-style: none !important;
-
-    li {
-      background-color: var(--light);
-      border: 1px solid var(--lightgray);
-      border-radius: 12px;
-      transition: all 0.25s ease;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-
-      // The post link
-      a {
-        display: block;
-        width: 100%;
-        padding: 2.5rem 1.8rem;
-        margin: 0;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.1rem;
-        color: var(--dark);
-        text-align: center;
-        
-        &::after { display: none; } // Remove default link icon
-      }
-
-      // Hover Effect
-      &:hover {
-        border-color: var(--secondary); // Accent green/blue border
-        transform: translateY(-5px); // Lift, like a stone in the water
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); // Dynamic shadow
-        background-color: var(--highlight);
-        
-        a {
-          color: var(--secondary);
-        }
-      }
-    }
-  }
-}
-
-
 /* Index Page Grid Layout */
 .index-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
-}
-
-/* The Glassmorphism Cards */
-.index-card {
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: rgba(var(--lightgray), 0.1);
-  border: 1px solid rgba(var(--lightgray), 0.5);
-  backdrop-filter: blur(4px);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  h3 {
-    margin-top: 0;
-    color: var(--secondary);
-  }
-
-  p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: var(--gray);
-  }
-
-  a {
-    margin-top: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.85rem;
-    color: var(--tertiary) !important;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    background: rgba(var(--lightgray), 0.2);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  }
-}
-
-/* High-end Typography for the Index Title */
-h1 {
-  font-size: 2.5rem;
-  letter-spacing: -0.03em;
-  background: linear-gradient(to right, var(--secondary), var(--tertiary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

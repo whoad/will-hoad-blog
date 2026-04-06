@@ -1,0 +1,150 @@
+/* Search Bar */
+.search {
+  background-color: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+/* Page Banner */
+.page-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: -1rem 0 2rem 0;
+  overflow: hidden;
+  border-radius: 12px;
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .banner-title {
+    color: white !important;
+    font-size: 3rem !important;
+    margin: 0 !important;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    height: 250px;
+    .banner-title { font-size: 1.8rem !important; }
+  }
+}
+
+/* Landing Page Cards (River Tiles) */
+.river-tiles {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0 !important;
+    margin: 2rem 0 !important;
+    list-style: none !important;
+
+    li {
+      background-color: var(--light);
+      border: 1px solid var(--lightgray);
+      border-radius: 12px;
+      transition: all 0.25s ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        display: block;
+        width: 100%;
+        padding: 2.5rem 1.8rem;
+        margin: 0;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--dark);
+        text-align: center;
+        
+        &::after { display: none; }
+      }
+
+      &:hover {
+        border-color: var(--secondary);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        background-color: var(--highlight);
+        
+        a {
+          color: var(--secondary);
+        }
+      }
+    }
+  }
+}
+
+/* Glassmorphism Cards (Index Cards) */
+.index-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(var(--lightgray), 0.1);
+  border: 1px solid rgba(var(--lightgray), 0.5);
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    margin-top: 0;
+    color: var(--secondary);
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--gray);
+  }
+
+  a {
+    margin-top: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: var(--tertiary) !important;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(var(--lightgray), 0.2);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+}
+
+/* Gradient Headings */
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+  background: linear-gradient(to right, var(--secondary), var(--tertiary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
