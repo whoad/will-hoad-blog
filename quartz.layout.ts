@@ -42,7 +42,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
-    Component.TagList(),
+    Component.DesktopOnly(Component.TagList()),
   ],
   right: [
     Component.Graph(),
