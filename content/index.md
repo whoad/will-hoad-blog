@@ -24,7 +24,7 @@ Iterate Everything
 	<div class="index-card">
 		<h3>Everything Else</h3>
 		<p>While everything can be iterated most of the world is outside the office, so here are all the other interests</p>
-		<a href="/everything">Rabbit hole →</a>
+		<a href="/Everything">Rabbit hole →</a>
 	</div>
 </div>
 
@@ -32,8 +32,8 @@ Iterate Everything
 
 ## Articles and Resources 
 - [[Posts/Holding Hope]]
-- [[Agility/Growth Requires Trust]]
-- [[Agility/Agile Ingredients Workshop]]
+- [[Growth Requires Trust]]
+- [[Agile Ingredients Workshop]]
 
 ## Personal Projects
 - [[Everything/Van Conversion/index|Camper Van Conversion]]
