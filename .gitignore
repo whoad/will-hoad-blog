@@ -5,6 +5,6 @@ public
 tsconfig.tsbuildinfo
 .obsidian
 .quartz-cache
-private/
+sync-content.sh
 .replit
 .vscode
