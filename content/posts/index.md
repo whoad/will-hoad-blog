@@ -1,4 +1,5 @@
 ---
+title: Posts
 description:
 draft: false
 ai_summary: ""

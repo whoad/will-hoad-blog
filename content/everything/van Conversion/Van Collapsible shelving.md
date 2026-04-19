@@ -14,5 +14,5 @@ cssclasses:
 
 A core design of the van was to keep everything "optional" on the ground, to ensure its always possible to load Kayaks. In turn, this meant trying to make life a bit easier with some shelving for boxes.
 
-![[../../assets/photos/van45.jpeg]]
-![[../../assets/photos/van46.jpeg]]
+![[van45.jpeg]]
+![[van46.jpeg]]

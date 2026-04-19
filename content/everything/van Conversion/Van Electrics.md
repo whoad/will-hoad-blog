@@ -28,8 +28,8 @@ I found a reasonably priced (£110 I think) for a 110W solid panel. With the CTE
 
 I will likely have made the pros mad, but it is attached with pure Sikaflex. By the time I realised that I probably should have bolted it I had already insulated and panelled everything. 4 years in with the occasional check its still rock solid. For peace of mind I would bolt it next time. 
 
-![[../../assets/photos/van16.jpeg]]
-![[../../assets/photos/van17.jpeg]]
-![[../../assets/photos/van18.jpeg]]
-![[../../assets/photos/van19.jpeg]]
-![[../../assets/photos/van20.jpeg]]
+![[van16.jpeg]]
+![[van17.jpeg]]
+![[van18.jpeg]]
+![[van19.jpeg]]
+![[van20.jpeg]]

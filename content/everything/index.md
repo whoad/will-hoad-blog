@@ -1,4 +1,5 @@
 ---
+title: Everything
 description:
 draft: false
 ai_summary: ""

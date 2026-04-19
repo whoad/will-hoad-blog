@@ -62,6 +62,13 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.ContentMeta(),
     Component.Lightbox(),
+    Component.ConditionalRender({
+      component: Component.RecentNotes({ 
+        title: "Recently Iterated Insights", 
+        limit: 5,
+      }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
     
   ],
   left: [

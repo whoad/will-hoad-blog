@@ -18,10 +18,10 @@ All done with a sharpie. Took inspiration from my tattoo and canvas my sister ma
 
 The pen has done a great job of staying on, though its not UV resistant so elements on the front of the van parked in the sun degrade and need re-doing about twice a year, and the back more sheltered once. 
 
-![[../../assets/photos/van21.jpeg]]
-![[../../assets/photos/van22.jpeg]]
-![[../../assets/photos/van23.jpeg]]
-![[../../assets/photos/van24.jpeg]]
-![[../../assets/photos/van25.jpeg]]
-![[../../assets/photos/van26.jpeg]]
-![[../../assets/photos/van27.jpeg]]
+![[van21.jpeg]]
+![[van22.jpeg]]
+![[van23.jpeg]]
+![[van24.jpeg]]
+![[van25.jpeg]]
+![[van26.jpeg]]
+![[van27.jpeg]]

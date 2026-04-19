@@ -1,4 +1,5 @@
 ---
+title: Agility
 description:
 draft: false
 ai_summary: ""

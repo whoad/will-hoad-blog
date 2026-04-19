@@ -14,26 +14,26 @@ Iterate Everything
 	<div class="index-card">
 		<h3> Agility</h3>
 		<p>My core resource on everything agility. An interlinked web of concepts & elements aiming  to unpick the complexity of the systems we look to evolve </p>
-		<a href="/Agility">Explore→</a>
+		<a href="/agility">Explore→</a>
 	</div>
 	<div class="index-card">
 		<h3>Posts</h3>
 		<p>A flow of my own explorations and learning. </p>
-		<a href="/Posts">Read more →</a>
+		<a href="/posts">Read more →</a>
 	</div>
 	<div class="index-card">
 		<h3>Everything Else</h3>
 		<p>While everything can be iterated most of the world is outside the office, so here are all the other interests</p>
-		<a href="/Everything">Rabbit hole →</a>
+		<a href="/everything">Rabbit hole →</a>
 	</div>
 </div>
 
 [Medium](https://medium.com/@willhoad) | [LinkedIn](https://www.linkedin.com/in/will-hoad/) | [CACI](https://www.caci.co.uk/) | [Youtube](https://www.youtube.com/@WillHoad)
 
 ## Articles and Resources 
-- [[Posts/Holding Hope]]
+- [[Holding Hope]]
 - [[Growth Requires Trust]]
 - [[Agile Ingredients Workshop]]
 
 ## Personal Projects
-- [[Everything/Van Conversion/index|Camper Van Conversion]]
+- [[blog/everything/van Conversion/index|Camper Van Conversion]]

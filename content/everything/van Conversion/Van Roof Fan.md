@@ -15,8 +15,8 @@ cssclasses:
 
 I am NOT proud of this. super janky 
 
-![[../../assets/photos/van41.jpeg]]
-![[../../assets/photos/van42.jpeg]]
-![[../../assets/photos/van43.jpeg]]
-![[../../assets/photos/van44.jpeg]]
+![[van41.jpeg]]
+![[van42.jpeg]]
+![[van43.jpeg]]
+![[van44.jpeg]]
 
