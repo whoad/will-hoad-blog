@@ -26,4 +26,3 @@ Great little rabbit hole wanting a "Shou Sugi Ban" effect on the cheapest panell
 ![[van37.jpeg]]
 ![[van38.jpeg]]
 ![[van39.jpeg]]
-![[van40.jpeg]]
