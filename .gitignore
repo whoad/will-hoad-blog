@@ -11,3 +11,5 @@ private/
 replit.nix
 .quartz/
 quartz/cli/tui/dist/
+will-hoad-blog.code-workspace
+sync-content.sh

@@ -1,3 +1,41 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+
+// .sidebar.left {
+//     position: relative;
+
+//     // Create the image layer
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         z-index: -1; // Sit behind the explorer/links
+//         pointer-events: none;
+
+//         background-size: cover;
+//         background-position: center;
+
+//         // Smooth transition for theme switching
+//         transition: background-image 0.3s ease;
+
+//         // --- LIGHT MODE ---
+//         background-image: url("/static/sidebar-light.jpg");
+//         // Subtle fade to the right so it doesn't clash with the center column
+//         mask-image: linear-gradient(to right, black 80%, transparent 100%);
+//         -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+//         opacity: 0.2; // Keep it subtle for light mode
+//     }
+// }
+
+// //--- DARK MODE OVERRIDE ---
+// [saved-theme="dark"] .sidebar.left::before {
+//     background-image: url("/static/sidebar-dark.jpg");
+//     opacity: 0.2; // Increased to ensure visibility against dark backgrounds
+//     mask-image: linear-gradient(to right, black 70%, transparent 100%);
+//     -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+// }
