@@ -24,7 +24,7 @@ The difference between these terms is often missed because the majority of peopl
 
 ## Methodologies 
 
-* [[../../../Coach/Agility/Kanban]]
+* Kanban
 
 
 

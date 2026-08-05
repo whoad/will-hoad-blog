@@ -24,3 +24,14 @@ I need to eat my own advice and experiment. I'm going to try and write human stu
 I guess this post was one of those rambles. Great start 😅
 
 #KnowingWhatYouAreDoingIsBoring #AgileCoaching 
+
+
+### Triggering points and Ideas
+
+* Veerle's epic talk at Agile on The Beach (that I really want to talk more about) 
+* 
+* Model: The Five Essential Elements of Wellbeing 
+
+
+
+

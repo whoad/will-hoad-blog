@@ -40,7 +40,7 @@ The [[Team|Scrum Team]] is made up of the following 3 roles.
 * [[blog/agility/practices/roles/Scrum Master|Scrum Master]]
 
  ### Events
-* [[../../../Coach/Agility/Practices/The Sprint|The Sprint]]
+* The Sprint
 * [[blog/agility/practices/events/Sprint Planning|Sprint Planning]]
 * [[blog/agility/practices/events/Daily Scrum|Daily Scrum]]
 * [[blog/agility/practices/events/Sprint Review|Sprint Review]]
