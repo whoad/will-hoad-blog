@@ -7,7 +7,6 @@ date: 2026-09-11
 updated: 2026-09-11
 type: blog
 tags:
-  - blog/topic
 draft: false
 description: Nigel Bakers reflections on the past, present, and future of Agile. Presented at Agile Glos.
 slug: agile-glos-nigel-baker-the-past-present-and-future-of-agile-work
@@ -33,7 +32,7 @@ We succeed in this modern working landscape through informal networks, experimen
 
 Aside from the content, I was in awe of his deeply human, genuine, and hilarious presentation ability. It felt like a true masterclass demonstration which if I can take on even a drop of I would be absolutely winning.
 
-This is exactly why we have CACI Agile Guild and are still building agile services, because we will only succeed by working with each other in our own context, so the more we collaborate the better it will be!
+This is exactly why we have communities like Agile Glos and CACI's Agile Guild, because we will only succeed by working with each other in our own context, so the more we collaborate the better it will be!
 
 **Agile Glos** - [Events](https://www.eventbrite.co.uk/o/120961278045) - [Linkedin](https://www.linkedin.com/company/agile-glos)
 

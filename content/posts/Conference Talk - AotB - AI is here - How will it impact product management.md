@@ -1,9 +1,11 @@
 ---
 description:
 draft: false
+type: blog
 ai_summary: "Learning log from #AgileOnTheBeach2026 Francesca Cortesi's talk \"AI is here - How will it impact product management\""
 license: CC BY-NC-SA 4.0
 created: 2026-07-09T13:10:00
+updated: 2026-07-09T13:10:00
 tags:
   - AgileOnTheBeach2026
   - Conference

@@ -1,9 +1,11 @@
 ---
 description:
 draft: false
+type: blog
 ai_summary: ""
 license: CC BY-NC-SA 4.0
 created: 2024-02-01T15:18:00
+updated: 2024-02-01T15:18:00
 tags: #Kanban 
 ---
 Another day, another Cert!

@@ -1,6 +1,7 @@
 ---
 created: 2026-01-12T15:53:00
-updated:
+updated: 2026-01-12T15:53:00
+type: blog
 tags:
 description: To maximise the value of what we do in a finite time constrained world, we must make hard decisions on what options out of many we think are going to give us the most valuable outcomes. One long standing popular approach to deciding what options to pick over others is MoSCoW, but it has some often-missed problems that make it notably worse than sticking to a prioritised list.
 draft: false

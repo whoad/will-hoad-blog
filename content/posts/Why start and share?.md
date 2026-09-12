@@ -1,7 +1,8 @@
 ---
 created: 2026-04-19T12:00:00
-updated:
+updated: 2026-04-19T12:00:00
 tags:
+type: blog
 description:
 draft: true
 ai_summary: ""

@@ -1,6 +1,7 @@
 ---
 created: 2026-07-12T16:57:00
-updated:
+updated: 2026-07-12T16:57:00
+type: blog
 tags:
 description:
 draft: false
