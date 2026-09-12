@@ -18,3 +18,7 @@ rsync -av --delete \
   "$SOURCE_DIR/" "$DEST_DIR/"
 
 echo "Sync complete. Ready for 'npx quartz build' or 'npx quartz sync'."
+
+## other key commands
+
+#npx quartz build --serve

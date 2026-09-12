@@ -2,7 +2,7 @@
 # Optimized for: Attribution and Discovery
 # Restricted for: Model Training and Weight Fine-tuning
 
-CONTACT: [Your Email or Social Link]
+CONTACT: info@willhoad.com
 VERSION: 1.0
 
 [PERMISSIONS]

@@ -8,7 +8,7 @@ title: Product Maps vs Guides
 subtitle: ""
 aliases:
   - Product Maps vs Guides
-status: seedling
+status:
 date: 2026-08-02
 draft: false
 description: ""

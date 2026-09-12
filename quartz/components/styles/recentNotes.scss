@@ -1,24 +1,85 @@
 .recent-notes {
   & > h3 {
-    margin: 0.5rem 0 0 0;
-    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
   }
 
   & > ul.recent-ul {
     list-style: none;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     padding-left: 0;
 
     & > li {
-      margin: 1rem 0;
-      .section > .desc > h3 > a {
-        background-color: transparent;
+      margin: 1.25rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed var(--lightgray);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .section > .desc > h3 {
+        margin: 0 0 0.25rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+
+        & > a {
+          background-color: transparent;
+          color: var(--dark) !important;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--secondary) !important;
+          }
+        }
+      }
+
+      .section > .desc > p.description {
+        margin: 0.25rem 0 0.4rem 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--gray);
       }
 
       .section > .meta {
-        margin: 0 0 0.5rem 0;
-        opacity: 0.6;
+        margin: 0 0 0.4rem 0;
+        font-size: 0.8rem;
+        opacity: 0.65;
+      }
+
+      .section > ul.tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        list-style: none;
+        padding-left: 0;
+        margin: 0.35rem 0 0 0;
+
+        & > li {
+          margin: 0;
+
+          & > a.tag-link {
+            font-size: 0.75rem !important;
+            font-weight: 400 !important;
+            color: var(--gray) !important;
+            background-color: transparent !important;
+            border: 1px solid var(--lightgray) !important;
+            padding: 0.05rem 0.45rem !important;
+            border-radius: 4px !important;
+            opacity: 0.7;
+            text-decoration: none;
+            transition: all 0.2s ease;
+
+            &:hover {
+              opacity: 1;
+              color: var(--secondary) !important;
+              border-color: var(--secondary) !important;
+            }
+          }
+        }
       }
     }
   }
 }
+

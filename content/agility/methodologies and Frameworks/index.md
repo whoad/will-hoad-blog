@@ -1,16 +1,18 @@
 ---
-created:
-updated:
+created: 2026-03-01
+updated: 2026-03-01
 tags:
 description:
 draft:
+
+# index
 ai_summary: ""
 license: CC BY-NC-SA 4.0
 title: Methodologies and Frameworks
 ---
 Methodologies and Frameworks
 
-## Methodologies and Frameworks #todo 
+## Methodologies and Frameworks
 In short;
 **Methodology** - A systematic approach on how to do something. Usually covers how to do everything to achieve the aim.
 **Framework** - A structure to support in how to doing something. Provides guidance often as a mix of values, principles and practices
